@@ -20,8 +20,8 @@ KeepShell 是一款专为 ASPX 环境设计的高级 WebShell 管理工具，为
 *   Potato提权： 利用系统服务漏洞进行权限提升，支持两种提权模块：
 *   efspotato： 利用 EFSPotato 实现权限提升。
 *   badpotato： 利用 BadPotato 实现权限提升。
-*   内网级联Cmd命令执行： 支持在复杂的内网环境中，级联多个节点执行 CMD 命令进行横向移动。
-*   内网级联PowerShell执行： 支持在复杂的内网环境中，级联多个节点执行 PowerShell 命令进行横向移动。
+*   内网级联Cmd命令执行： 支持在复杂的内网环境中，级联内网webshell执行 CMD 命令进行横向移动。
+*   内网级联PowerShell执行： 支持在复杂的内网环境中，级联内网webshell执行 PowerShell 命令进行横向移动。
 
 
 ## 安装与使用
