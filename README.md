@@ -1,5 +1,5 @@
 
-# KeepShell：专为ASPX设计的高级WebShell管理工具
+# KeepShell：首款支持内网级联的WebShell管理工具
 
 KeepShell 是一款专为 ASPX 环境设计的高级 WebShell 管理工具，为安全研究人员和渗透测试人员提供强大的命令执行、权限提升和内网穿透能力。
 
